@@ -26,17 +26,17 @@
 				<xsl:variable name="username" select="/page/pageRequest/userInformation/@username"/>
 						<xsl:variable name="groups" select="/page/pageRequest/userInformation/@groups"/>
 
-						<xsl:choose>
-							<xsl:when test="$username">
+						<!-- <xsl:choose>
+							<xsl:when test="$username"> -->
 								<!-- <xsl:if test="contains($groups,'admin')"></xsl:if> -->
 									<xsl:call-template name="collectionCards"/>
-							</xsl:when>
+							<!-- </xsl:when>
 							<xsl:otherwise>
 								<div style="margin: 200px 0px; text-align:center;" class="container">
 									<h1>Veuillez vous connecter pour voir les collections</h1>
 								</div>
 							</xsl:otherwise>
-						</xsl:choose>
+						</xsl:choose> -->
 					
 				</div>
 			</div>
@@ -54,7 +54,7 @@
 			interfaces/<xsl:value-of select="$interface_name"/>/images/library.jpg
 		</xsl:variable>
 		<xsl:variable name="coverImage2">
-			interfaces/<xsl:value-of select="$interface_name"/>/images/library1.jpg
+			interfaces/<xsl:value-of select="$interface_name"/>/images/documents1.jpg
 		</xsl:variable>
 		<xsl:variable name="coverImage3">
 			interfaces/<xsl:value-of select="$interface_name"/>/images/library2.jpg
